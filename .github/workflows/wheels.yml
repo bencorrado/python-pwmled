@@ -33,6 +33,7 @@ jobs:
           # configure cibuildwheel to build native archs ('auto'), and some
           # emulated ones
           CIBW_ARCHS_LINUX: auto aarch64
+          CIBW_MUSLLINUX_AARCH64_IMAGE: musllinux_1_1
 
       - uses: actions/upload-artifact@v3
         with:
